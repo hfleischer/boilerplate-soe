@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AddInID>{06b6deb0-d042-4da4-9114-be840d860e5a}</AddInID>
+  <Author>SynerGIS Informationssysteme GmbH.</Author>
+  <Company>SynerGIS Informationssysteme GmbH.</Company>
+  <Date>20191016161701</Date>
+  <Description>BoilerplateSoe11-description</Description>
+  <Name>BoilerplateSoe11</Name>
+  <Provider>ArcObjects11</Provider>
+  <Targets>
+    <Target name="server" version="10.6"/>
+  </Targets>
+  <Version>BOILERPLATE_SOE.20191016161701</Version>
+  <AddIn language="Java">
+    <ServerObjectType>
+      <Name>MapServer</Name>
+      <ExtensionTypes>
+        <ExtensionType class="com.mysynergis.soe.BoilerplateSoi11" id="com.mysynergis.soe.BoilerplateSoi11" library="boilerplate-soe-11.jar">
+          <Name>BoilerplateSoi11</Name>
+          <DisplayName>Boilerplate SOI (enterprise)</DisplayName>
+          <Description>Boilerplate SOI (enterprise)</Description>
+          <Properties>
+            <config>DEFAULT</config>
+          </Properties>
+          <Info>
+            <DefaultWebCapabilities/>
+            <AllWebCapabilities/>
+            <SupportsSOAP>false</SupportsSOAP>
+            <SupportsREST>false</SupportsREST>
+            <SupportsInterceptor>true</SupportsInterceptor>
+            <hasManagerPropertiesConfigurationPane>false</hasManagerPropertiesConfigurationPane>
+          </Info>
+          <Resources>
+            <WSDL/>
+          </Resources>
+        </ExtensionType>
+        <ExtensionType class="com.mysynergis.soe.BoilerplateSoe11" id="com.mysynergis.soe.BoilerplateSoe11" library="boilerplate-soe-11.jar">
+          <Name>BoilerplateSoe11</Name>
+          <DisplayName>Boilerplate SOE (enterprise)</DisplayName>
+          <Description>Boilerplate SOE (enterprise)</Description>
+          <Properties>
+            <config>DEFAULT</config>
+          </Properties>
+          <Info>
+            <DefaultWebCapabilities/>
+            <AllWebCapabilities/>
+            <SupportsREST>true</SupportsREST>
+            <hasManagerPropertiesConfigurationPane>false</hasManagerPropertiesConfigurationPane>
+          </Info>
+          <Resources/>
+        </ExtensionType>
+      </ExtensionTypes>
+    </ServerObjectType>
+  </AddIn>
+</ESRI.Configuration>

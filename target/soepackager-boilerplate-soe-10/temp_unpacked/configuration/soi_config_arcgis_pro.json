@@ -1,0 +1,16 @@
+{
+  "operation_list": [
+    {
+      "type": "com.mysynergis.interceptor.RestOperationImplAnchorEdits",
+      "defs": {
+        "path": "layers/0",
+        "name": "applyEdits",
+        "map_name": "world_3857",
+        "layer_id_anchor": 0,
+        "layer_id_annotation": 1,
+        "layer_id_labelled": 2
+      }
+    }
+  ],
+  "launchers_path": "C:/work/_projects_berlin/boilerplate-soe/src/main/resources/launch"
+}

@@ -1,0 +1,4 @@
+\Q/.classpath\E
+\Q/.project\E
+\Q/.settings/\E.*
+\Q/src/main/resources/launch/*.launch

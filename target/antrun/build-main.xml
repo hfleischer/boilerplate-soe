@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo>path AGS server: https://W-LAP-FLEISCHER.SYNERGIS.INTERN:6443/arcgis :: AGS user:
+											PortalAdmin</echo>
+  <echo>path SOE configuration: C:\arcgis\arcgisserver\config-store\extns\synergis</echo>
+  <echo>path SOE file: boilerplate-soe-11</echo>
+  <delete failonerror="false">
+    <fileset includes="*.launch" dir="C:\arcgis\arcgisserver\config-store\extns\synergis/debug"/>
+    <fileset includes="*.launch" dir="C:\work\_projects_berlin\_workspace_jdk11\boilerplate-soe\target/debug"/>
+  </delete>
+  <taskdef classname="com.mysynergis.soe.publish.SoePublisher" name="soepublisher" classpathref="maven.compile.classpath"/>
+  <soepublisher soefile="C:\work\_projects_berlin\_workspace_jdk11\boilerplate-soe\target\boilerplate-soe-11.soe" endpoint="https://W-LAP-FLEISCHER.SYNERGIS.INTERN:6443/arcgis" password="ArcGIS2013" isupload="true" soiname="BoilerplateSoi11" soename="BoilerplateSoe11" username="PortalAdmin"/>
+  <mkdir dir="C:\work\_projects_berlin\_workspace_jdk11\boilerplate-soe\target/debug"/>
+  <copy todir="C:\work\_projects_berlin\_workspace_jdk11\boilerplate-soe\target/debug">
+    <fileset includes="*.launch" dir="C:\arcgis\arcgisserver\config-store\extns\synergis/debug"/>
+  </copy>
+</target>
+</project>

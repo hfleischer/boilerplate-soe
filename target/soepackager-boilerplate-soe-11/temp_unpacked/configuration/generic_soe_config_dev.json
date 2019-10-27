@@ -1,0 +1,6 @@
+{
+	"operation_list": [
+		"com.mysynergis.soe.operation.impl.OperationImplMapDocument"
+	],
+	"launchers_path":"C:/work/_projects_10_m/weboffice-soi-refguard/src/main/resources/launch"
+}
